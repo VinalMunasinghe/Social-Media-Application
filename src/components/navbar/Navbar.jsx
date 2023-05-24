@@ -1,4 +1,4 @@
-import "./Navbar.scss"
+import "./navbar.scss"
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
@@ -12,19 +12,33 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <div className="navbar"> 
-        <div className="left">
-            <Link to = "./" style={{textDecoration:"none"}}>
-            <span>iamsocial</span>
-            </Link>
+            <div className="left">
+                 <Link to = "./" style={{textDecoration:"none"}}>
+                 <span>iamsocial</span>
+                 </Link>
+                 <HomeOutlinedIcon/>
+                 <DarkModeOutlinedIcon/>
+                <GridViewOutlinedIcon/>
+                <div className="search">
+                <SearchOutlinedIcon/>
+                 <input type="text" placeholder="Search for friends"/>
+                 </div>
+            </div>
+        <div className="right">
+            <Person2OutlinedIcon/>
+            <EmailOutlinedIcon/>
+            <NotificationsNoneOutlinedIcon/>
+            <div className="user">
+                {/* <img src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" /> */}
+                <span>Vinal Munasinghe</span>
 
 
-
+            </div>
 
 
 
         </div>
-        <div className="right"></div>
-         </div>
+        </div>
     )
 }
 

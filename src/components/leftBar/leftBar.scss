@@ -1,13 +1,23 @@
 .leftBar{
 
   .container{
-
     padding: 20px;
+
+    hr{
+        margin: 20px 0;
+        border: none;
+        height: 0.5px;
+        background-color:lightgray;
+    }
     .menu{
 
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        span{
+            font-size: 12px;
+        }
 
 
         .user{
@@ -23,6 +33,7 @@
             }
 
             span{
+                font-size: 14px;
 
                 
             }
@@ -41,6 +52,7 @@
             }
 
             span{
+                font-size: 14px;
 
 
             }

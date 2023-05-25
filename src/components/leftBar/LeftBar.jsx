@@ -20,7 +20,7 @@ const LeftBar = () => {
              <div className="container"> 
                      <div className="menu">
                           <div className="user">
-                          {/* <img src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" /> */}
+                          <img src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                           <span>Vinal Munasinghe</span>
                             
                             
@@ -47,10 +47,36 @@ const LeftBar = () => {
                              </div>
 
                          </div>
+                         <hr/>
+                         <div className="menu">
+                             <span>Your Shortcut</span>
+                                 <div className="item">
+                                 <img src={Events} alt="" />
+                                <span>Events</span>
+                            </div>
+                                 <div className="item">
+                                 <img src={Gaming} alt="" />
+                                 <span>Gaming</span>
+                             </div>
+                                 <div className="item">
+                                 <img src={Gallery} alt="" />
+                                 <span>Gallery</span>
+                            </div>
+                                 <div className="item">
+                                 <img src={Videos} alt="" />
+                                 <span>Videos</span>
+                            </div>
+                                 <div className="item">
+                                 <img src={Messages} alt="" />
+                                 <span>Messages</span>
+                             </div>
+
+                         </div>
                  </div>
            
             </div>    
-    )
+    );
+    
 }
 
 export default LeftBar
